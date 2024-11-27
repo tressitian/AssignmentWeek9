@@ -40,3 +40,14 @@ while Race:
         turtle.forward(distance)
 
 s.exitonclick()
+
+
+from record_game import record_game_data
+
+
+if winning == bet:
+    print(f"You have Won the bet on {winning} turtle! The {winning} is the winner")
+else:
+    print(f"You lose! {winning} turtle is the winner")
+
+record_game_data(bet, winning)
